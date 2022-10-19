@@ -1,0 +1,10 @@
+D:\Farrukh\rd\RDProject\RD.EL\bin\Debug\RD.EL.dll
+D:\Farrukh\rd\RDProject\RD.EL\bin\Debug\RD.EL.pdb
+D:\Farrukh\rd\RDProject\RD.EL\obj\Debug\ResolveAssemblyReference.cache
+D:\Farrukh\rd\RDProject\RD.EL\obj\Debug\RD.EL.dll
+D:\Farrukh\rd\RDProject\RD.EL\obj\Debug\RD.EL.pdb
+D:\Farrukh\Projects\CORD\RD.EL\bin\Debug\RD.EL.dll
+D:\Farrukh\Projects\CORD\RD.EL\bin\Debug\RD.EL.pdb
+D:\Farrukh\Projects\CORD\RD.EL\obj\Debug\ResolveAssemblyReference.cache
+D:\Farrukh\Projects\CORD\RD.EL\obj\Debug\RD.EL.dll
+D:\Farrukh\Projects\CORD\RD.EL\obj\Debug\RD.EL.pdb

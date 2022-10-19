@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="btnLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>User Role:</value>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="menuMain" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="RightToLeft" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toolDocument" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="toolEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="toolFind" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="toolHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="toolLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="toolMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="toolPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="toolRegDeed" xml:space="preserve">
+    <value>Registration Deed</value>
+  </data>
+  <data name="toolUrdu" xml:space="preserve">
+    <value>Urdu</value>
+  </data>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnFard" xml:space="preserve">
+    <value>Justify Fard</value>
+  </data>
+  <data name="btnNewEntry" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="btnNotAccept" xml:space="preserve">
+    <value>Not Accept</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnScan" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="dgvStatusColApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="dgvStatusColCaste" xml:space="preserve">
+    <value>Caste</value>
+  </data>
+  <data name="dgvStatusColCNIC" xml:space="preserve">
+    <value>CNIC</value>
+  </data>
+  <data name="dgvStatusColDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="dgvStatusColDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dgvStatusColFatherName" xml:space="preserve">
+    <value>Father Name</value>
+  </data>
+  <data name="dgvStatusColMushtari" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="dgvStatusColName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="dgvStatusColPhoto" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="dgvStatusColRegistryNo" xml:space="preserve">
+    <value>Registry No</value>
+  </data>
+  <data name="dgvStatusColRelation" xml:space="preserve">
+    <value>Relation</value>
+  </data>
+  <data name="dgvStatusColRemarks" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="dgvStatusColStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="FontName" xml:space="preserve">
+    <value>Tahoma</value>
+  </data>
+  <data name="lblBasicInfo" xml:space="preserve">
+    <value>Basic Information</value>
+  </data>
+  <data name="lblDocumentNumber" xml:space="preserve">
+    <value>Doc No:</value>
+  </data>
+  <data name="lblEast" xml:space="preserve">
+    <value>East:</value>
+  </data>
+  <data name="lblJildNumber" xml:space="preserve">
+    <value>Possible No.:</value>
+  </data>
+  <data name="lblKhewatNo" xml:space="preserve">
+    <value>Khewat No:</value>
+  </data>
+  <data name="lblLogin" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="lblMauza" xml:space="preserve">
+    <value>Mauza:</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="lblQatah" xml:space="preserve">
+    <value>Measles No:</value>
+  </data>
+  <data name="lblRaqba" xml:space="preserve">
+    <value>By area of:</value>
+  </data>
+  <data name="lblRegNo" xml:space="preserve">
+    <value>Reg. No:</value>
+  </data>
+  <data name="lblRegType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="lblSouth" xml:space="preserve">
+    <value>South:</value>
+  </data>
+  <data name="lblSubReg" xml:space="preserve">
+    <value>Sub Registrar:</value>
+  </data>
+  <data name="lblTehsil" xml:space="preserve">
+    <value>Tehsil:</value>
+  </data>
+  <data name="lblZar" xml:space="preserve">
+    <value>Zar:</value>
+  </data>
+  <data name="lblZillah" xml:space="preserve">
+    <value>District:</value>
+  </data>
+  <data name="RightToLeftLayout" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="closeMessage" xml:space="preserve">
+    <value>Do you want to close the application?</value>
+  </data>
+  <data name="lblBahiNumber" xml:space="preserve">
+    <value>Bahi No:</value>
+  </data>
+  <data name="lblKhatuniNo" xml:space="preserve">
+    <value>Khatuni No:</value>
+  </data>
+  <data name="lblMuntalka" xml:space="preserve">
+    <value>Hissa:</value>
+  </data>
+  <data name="lblNorth" xml:space="preserve">
+    <value>North:</value>
+  </data>
+  <data name="lblWest" xml:space="preserve">
+    <value>West:</value>
+  </data>
+  <data name="closeChildForm" xml:space="preserve">
+    <value>Your data should be lose. Do you want to continue?</value>
+  </data>
+  <data name="lblSearchRegistry" xml:space="preserve">
+    <value>Search:</value>
+  </data>
+  <data name="btnReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btnNewTransferRecord" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="btnTransferRecordDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="colAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="colCaste" xml:space="preserve">
+    <value>Caste</value>
+  </data>
+  <data name="colFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="colIsDepartment" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="colIsGovt" xml:space="preserve">
+    <value>Govt</value>
+  </data>
+  <data name="colIsKashmiri" xml:space="preserve">
+    <value>Kashmiri</value>
+  </data>
+  <data name="colLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="colNIC" xml:space="preserve">
+    <value>CNIC</value>
+  </data>
+  <data name="colPicPath" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="colThumb" xml:space="preserve">
+    <value>Thumb</value>
+  </data>
+  <data name="displayPic" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="tabFard" xml:space="preserve">
+    <value>Fard</value>
+  </data>
+  <data name="tabMushtari" xml:space="preserve">
+    <value>Mushtari</value>
+  </data>
+  <data name="tabScanning" xml:space="preserve">
+    <value>Scanning</value>
+  </data>
+  <data name="tabTransfer" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="btnRegistrationDeed" xml:space="preserve">
+    <value>Registration Deed</value>
+  </data>
+</root>

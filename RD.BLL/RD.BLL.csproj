@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55B54C00-1CDA-4354-8E8E-FD916DD6D904}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RD.BLL</RootNamespace>
+    <AssemblyName>RD.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>"%24/CORD/RD.BLL", CAAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath />
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsFrmMain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RD\bFard.cs" />
+    <Compile Include="RD\bKhasra.cs" />
+    <Compile Include="RD\bPerson.cs" />
+    <Compile Include="RD\bPlot.cs" />
+    <Compile Include="RD\bRegistryImages.cs" />
+    <Compile Include="RD\bRegistryLrmisSync.cs" />
+    <Compile Include="RD\bRegistryOperations.cs" />
+    <Compile Include="RD\bRegistryPerson.cs" />
+    <Compile Include="Setup\bCaste.cs" />
+    <Compile Include="Setup\bChakTashkhees.cs" />
+    <Compile Include="Setup\bConfigurations.cs" />
+    <Compile Include="Setup\bPartyType.cs" />
+    <Compile Include="Setup\bRegistryType.cs" />
+    <Compile Include="Territory\bDistrict.cs" />
+    <Compile Include="Territory\bMauza.cs" />
+    <Compile Include="Territory\bPatwarCircle.cs" />
+    <Compile Include="Territory\bProvince.cs" />
+    <Compile Include="Territory\bQanoonGoi.cs" />
+    <Compile Include="Territory\bServiceCentre.cs" />
+    <Compile Include="Territory\bTehsil.cs" />
+    <Compile Include="Territory\bTerritoryWithMauza.cs" />
+    <Compile Include="Territory\bTown.cs" />
+    <Compile Include="Users\bForms.cs" />
+    <Compile Include="Users\bMauzaRights.cs" />
+    <Compile Include="Users\bMenu.cs" />
+    <Compile Include="Users\bRole.cs" />
+    <Compile Include="Users\bRoleRights.cs" />
+    <Compile Include="Users\bUserRights.cs" />
+    <Compile Include="Users\bUserRoles.cs" />
+    <Compile Include="Users\bUsers.cs" />
+    <Compile Include="Users\bUserServiceCentre.cs" />
+    <Compile Include="Users\bUsersLog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RD.DAL\RD.DAL.csproj">
+      <Project>{D7194F05-210E-4003-814A-DB98E2710B9C}</Project>
+      <Name>RD.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RD.EL\RD.EL.csproj">
+      <Project>{0AF07EC9-3DC1-4BA8-9FDF-350C99607FAB}</Project>
+      <Name>RD.EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

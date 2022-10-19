@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65F45112-C555-4489-94BD-9780ECDDF3CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RDProject</RootNamespace>
+    <AssemblyName>RDProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>c:\deploye\rd\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A2AC2F775BF4FBDC3C3D639F2CDAEDA9C219214F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RDProject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPDevNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPEngNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPEngNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPGuiNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPShrNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPVerNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\fshahid\Downloads\pankaj_633984021990467929_ItextSharpExample\ItextSharpExample\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>G:\LRMIS_PUNJAB\BL\bin\Debug\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>C:\Users\fshahid\Downloads\PDFSharp-MigraDocFoundation-1_32(1)\MigraDoc\samples\Samples C#\Based on GDI+\HelloWorld\bin\Debug\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>C:\Users\fshahid\Downloads\PDFSharp-MigraDocFoundation-1_32(1)\MigraDoc\samples\Samples C#\Based on GDI+\HelloWorld\bin\Debug\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>C:\Users\fshahid\Downloads\PDFSharp-MigraDocFoundation-1_32(1)\MigraDoc\samples\Samples C#\Based on GDI+\HelloWorld\bin\Debug\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>C:\Users\fshahid\Downloads\PDFSharp-MigraDocFoundation-1_32(1)\MigraDoc\samples\Samples C#\Based on GDI+\HelloWorld\bin\Debug\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>C:\Users\fshahid\Downloads\PDFSharp-MigraDocFoundation-1_32(1)\MigraDoc\samples\Samples C#\Based on GDI+\HelloWorld\bin\Debug\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="RadControlSpy, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\RadControlSpy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TallComponents.PDF.Kit">
+      <HintPath>C:\Users\fshahid\Downloads\PDFKit.NET_4.0.21.0\Microsoft.NET 4.0\TallComponents.PDF.Kit.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.ChartView.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.GridView.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.PdfViewer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.PivotGrid.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadChart, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.RadChart.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.RadDock.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.RichTextBox.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Scheduler.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.SpellChecker.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Desert.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.HighContrastBlack.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Office2007Black.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.Themes.Windows7.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2013.1.321.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.UI.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\Telerik.WinControls.UI.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\TelerikData.dll</HintPath>
+    </Reference>
+    <Reference Include="ThemeViewer, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\ThemeViewer.exe</HintPath>
+    </Reference>
+    <Reference Include="Touchless.Vision, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Touchless.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualStyleBuilder, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\VisualStyleBuilder.exe</HintPath>
+    </Reference>
+    <Reference Include="VisualStyleBuilder.Design, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Telerik\RadControls for WinForms Q1 2013\Bin40\VisualStyleBuilder.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="WebCam_Capture, Version=1.0.2395.24959, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\fshahid\Documents\Received Files\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceptForm.Designer.cs">
+      <DependentUpon>AcceptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncBaseDialog.Designer.cs">
+      <DependentUpon>AsyncBaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureForm.designer.cs">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DiscForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscForm.Designer.cs">
+      <DependentUpon>DiscForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eztwain.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBasicInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasicInfo.Designer.cs">
+      <DependentUpon>frmBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInbox.Designer.cs">
+      <DependentUpon>frmInbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin_win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin_win.Designer.cs">
+      <DependentUpon>frmLogin_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BasicInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BasicInformation.Designer.cs">
+      <DependentUpon>frm_BasicInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MainMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MainMDI.Designer.cs">
+      <DependentUpon>frm_MainMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenClass\clsCulture.cs" />
+    <Compile Include="General\Common.cs" />
+    <Compile Include="Inbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inbox.Designer.cs">
+      <DependentUpon>Inbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoadingCircle.Designer.cs">
+      <DependentUpon>LoadingCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainURDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainURDForm.Designer.cs">
+      <DependentUpon>MainURDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="RDBasicInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDBasicInfo.Designer.cs">
+      <DependentUpon>RDBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Camera_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Camera_English.Designer.cs">
+      <DependentUpon>Camera_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\DragImage_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\DragImage_English.Designer.cs">
+      <DependentUpon>DragImage_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Fard_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Fard_English.Designer.cs">
+      <DependentUpon>Fard_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Fard_Urdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Fard_Urdu.Designer.cs">
+      <DependentUpon>Fard_Urdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\InboxForm_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\InboxForm_English.Designer.cs">
+      <DependentUpon>InboxForm_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\InboxForm_Urdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\InboxForm_Urdu.Designer.cs">
+      <DependentUpon>InboxForm_Urdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Khasra_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Khasra_English.Designer.cs">
+      <DependentUpon>Khasra_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Khasra_Urdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Khasra_Urdu.Designer.cs">
+      <DependentUpon>Khasra_Urdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Person_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Person_English.Designer.cs">
+      <DependentUpon>Person_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Person_Urdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Person_Urdu.Designer.cs">
+      <DependentUpon>Person_Urdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Plot_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Plot_English.Designer.cs">
+      <DependentUpon>Plot_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\RD_Urd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\RD_Urd.Designer.cs">
+      <DependentUpon>RD_Urd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\RegistrationDeed_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\RegistrationDeed_English.Designer.cs">
+      <DependentUpon>RegistrationDeed_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\RegistrationDeed_Urdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\RegistrationDeed_Urdu.Designer.cs">
+      <DependentUpon>RegistrationDeed_Urdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\ScanImages_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\ScanImages_English.Designer.cs">
+      <DependentUpon>ScanImages_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\ScannedFileUpload_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\ScannedFileUpload_English.Designer.cs">
+      <DependentUpon>ScannedFileUpload_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\ScanningForm_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\ScanningForm_English.Designer.cs">
+      <DependentUpon>ScanningForm_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\ScanningForm_Urdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\ScanningForm_Urdu.Designer.cs">
+      <DependentUpon>ScanningForm_Urdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\SRApprovalForm_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\SRApprovalForm_English.Designer.cs">
+      <DependentUpon>SRApprovalForm_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RD\Thumb_English.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RD\Thumb_English.Designer.cs">
+      <DependentUpon>Thumb_English.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrySearchPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrySearchPanel.Designer.cs">
+      <DependentUpon>RegistrySearchPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSample.Designer.cs">
+      <DependentUpon>ReportSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rdParties.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rdParties.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceCulture\RDProjectCul.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RDProjectCul.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScanPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanPicture.Designer.cs">
+      <DependentUpon>ScanPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CasteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\CasteForm.Designer.cs">
+      <DependentUpon>CasteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Configurations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\Configurations.Designer.cs">
+      <DependentUpon>Configurations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CreateRegistryTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\CreateRegistryTypeForm.Designer.cs">
+      <DependentUpon>CreateRegistryTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CreateUserForm_Urdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\CreateUserForm_Urdu.Designer.cs">
+      <DependentUpon>CreateUserForm_Urdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\PartyTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\PartyTypeForm.Designer.cs">
+      <DependentUpon>PartyTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Territory\DistrictForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory\DistrictForm.Designer.cs">
+      <DependentUpon>DistrictForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Territory\MauzaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory\MauzaForm.Designer.cs">
+      <DependentUpon>MauzaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Territory\TehsilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory\TehsilForm.Designer.cs">
+      <DependentUpon>TehsilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Territory\TownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory\TownForm.Designer.cs">
+      <DependentUpon>TownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thumb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucTerritory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTerritory.Designer.cs">
+      <DependentUpon>ucTerritory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThumb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThumb.Designer.cs">
+      <DependentUpon>ucThumb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\OutlookBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\OutlookBar.designer.cs">
+      <DependentUpon>OutlookBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variables.cs" />
+    <Compile Include="WebCam.cs" />
+    <EmbeddedResource Include="AcceptForm.resx">
+      <DependentUpon>AcceptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaptureForm.resx">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscForm.resx">
+      <DependentUpon>DiscForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.en.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.ur.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBasicInfo.resx">
+      <DependentUpon>frmBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInbox.resx">
+      <DependentUpon>frmInbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin_win.resx">
+      <DependentUpon>frmLogin_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BasicInformation.resx">
+      <DependentUpon>frm_BasicInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainMDI.resx">
+      <DependentUpon>frm_MainMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inbox.resx">
+      <DependentUpon>Inbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainURDForm.resx">
+      <DependentUpon>MainURDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDBasicInfo.resx">
+      <DependentUpon>RDBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Camera_English.resx">
+      <DependentUpon>Camera_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\DragImage_English.resx">
+      <DependentUpon>DragImage_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Fard_English.resx">
+      <DependentUpon>Fard_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Fard_Urdu.resx">
+      <DependentUpon>Fard_Urdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\InboxForm_English.resx">
+      <DependentUpon>InboxForm_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\InboxForm_Urdu.resx">
+      <DependentUpon>InboxForm_Urdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Khasra_English.resx">
+      <DependentUpon>Khasra_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Khasra_Urdu.resx">
+      <DependentUpon>Khasra_Urdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Person_English.resx">
+      <DependentUpon>Person_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Person_Urdu.resx">
+      <DependentUpon>Person_Urdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Plot_English.resx">
+      <DependentUpon>Plot_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\RD_Urd.resx">
+      <DependentUpon>RD_Urd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\RegistrationDeed_English.resx">
+      <DependentUpon>RegistrationDeed_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\RegistrationDeed_Urdu.resx">
+      <DependentUpon>RegistrationDeed_Urdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\ScanImages_English.resx">
+      <DependentUpon>ScanImages_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\ScannedFileUpload_English.resx">
+      <DependentUpon>ScannedFileUpload_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\ScanningForm_English.resx">
+      <DependentUpon>ScanningForm_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\ScanningForm_Urdu.resx">
+      <DependentUpon>ScanningForm_Urdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\SRApprovalForm_English.resx">
+      <DependentUpon>SRApprovalForm_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RD\Thumb_English.resx">
+      <DependentUpon>Thumb_English.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrySearchPanel.resx">
+      <DependentUpon>RegistrySearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSample.resx">
+      <DependentUpon>ReportSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rdParties.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rdParties.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceCulture\RDProjectCul.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RDProjectCul.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceCulture\RDProjectCul.ur.resx" />
+    <EmbeddedResource Include="ScanPicture.resx">
+      <DependentUpon>ScanPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\CasteForm.resx">
+      <DependentUpon>CasteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\Configurations.resx">
+      <DependentUpon>Configurations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\CreateRegistryTypeForm.resx">
+      <DependentUpon>CreateRegistryTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\CreateUserForm_Urdu.resx">
+      <DependentUpon>CreateUserForm_Urdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup\PartyTypeForm.resx">
+      <DependentUpon>PartyTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory\DistrictForm.resx">
+      <DependentUpon>DistrictForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory\MauzaForm.resx">
+      <DependentUpon>MauzaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory\TehsilForm.resx">
+      <DependentUpon>TehsilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory\TownForm.resx">
+      <DependentUpon>TownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTerritory.resx">
+      <DependentUpon>ucTerritory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThumb.resx">
+      <DependentUpon>ucThumb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\OutlookBar.resx">
+      <DependentUpon>OutlookBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Variables.Roles.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RDProject_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RD.BLL\RD.BLL.csproj">
+      <Project>{55B54C00-1CDA-4354-8E8E-FD916DD6D904}</Project>
+      <Name>RD.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RD.EL\RD.EL.csproj">
+      <Project>{0AF07EC9-3DC1-4BA8-9FDF-350C99607FAB}</Project>
+      <Name>RD.EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bilder\computer-icon.gif" />
+    <Content Include="Bilder\folder-green-icon.jpg" />
+    <Content Include="Bilder\folder-yellow-icon.jpg" />
+    <Content Include="Bilder\Gost.gif" />
+    <Content Include="Bilder\Kids.jpeg" />
+    <Content Include="Bilder\landscape.jpg" />
+    <Content Include="Bilder\ONE-XL-icon.jpg" />
+    <Content Include="Bilder\pb1400-icon.gif" />
+    <Content Include="Bilder\Sun.gif" />
+    <Content Include="Resources\back.gif" />
+    <Content Include="Resources\disc.jpg" />
+    <Content Include="Resources\first.gif" />
+    <Content Include="Resources\forward.gif" />
+    <Content Include="Resources\Image1.bmp" />
+    <None Include="Reports\FardKhasra.rpt" />
+    <None Include="Reports\FardKhatuni.rpt" />
+    <None Include="Reports\FardKhewat.rpt" />
+    <None Include="Reports\FardPerson.rpt" />
+    <None Include="Resources\index.jpg" />
+    <Content Include="Resources\inbox.png" />
+    <Content Include="Resources\last.gif" />
+    <Content Include="Resources\loading.gif" />
+    <None Include="Resources\logo.png" />
+    <Content Include="Resources\loginInfo.png" />
+    <Content Include="Resources\main3.jpg" />
+    <Content Include="Resources\main_topbar1.jpg" />
+    <Content Include="Resources\print.png" />
+    <Content Include="Resources\registration.png" />
+    <Content Include="Resources\setup.png" />
+    <Content Include="Resources\spinning-loader.gif" />
+    <Content Include="Resources\Tulips.jpg" />
+    <Content Include="Resources\userManagement.png" />
+    <Content Include="Resources\_Tulips.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PersonPic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
